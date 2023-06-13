@@ -1,6 +1,9 @@
 body{
     background-color: rgb(45, 45, 49);
 }
+hr{
+    color: aliceblue;
+}
 /* Texto */
 h1{
     color: aliceblue;
