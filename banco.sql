@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS lista6;
+
 CREATE DATABASE lista6;
 USE lista6;
 
@@ -15,6 +17,6 @@ create table agenda (
     foto  varchar(100) null,
 	dt_cadastro date not null,
 	PRIMARY KEY (id_agenda)
-)
+);
 
 SELECT * FROM agenda

@@ -28,7 +28,7 @@ if(mysqli_num_rows($result) > 0){
     $sql .= " VALUES ('".$nome."','".$apelido."','".$endereco."','".$bairro."','".$cidade."','".$estado."'
     ,'".$fone."','".$cel."','".$email."','".$nome_foto."','".$data."')";
     
-    echo $sql."<br>";
+    //echo $sql."<br>";
     $result = mysqli_query($con, $sql);
     
     if($result)

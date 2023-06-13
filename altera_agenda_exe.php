@@ -33,7 +33,7 @@
 
     WHERE id_agenda = $id_agenda";
 
-    echo $sql;
+    //echo $sql;
     $result = mysqli_query($con,$sql);
     if($result){
         echo "<h3>Dados alterados com sucesso!</h3><br>";

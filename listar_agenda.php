@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar</title>
+    <title>Lista de Contatos</title>
 </head>
 <body>
 <?php
@@ -14,7 +14,7 @@
         $row = mysqli_fetch_array($result);
     ?>
     <div align="center">
-    <h1>Agendamentos</h1>
+    <h1>Lista de Contato</h1>
     <table border="1" width="500">
         <tr>
             <th>ID</th>
@@ -52,8 +52,8 @@
             echo "<td>".$row['cel']."</td>";
             echo "<td>".$row['email']."</td>";
             echo "<td>".$row['dt_cadastro']."</td>";
-            echo "<td><a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'>Alterar</a></td>";
-            echo "<td><a href='deleta_agenda.php?id_agenda=".$row['id_agenda']."'>Deletar</td>";
+            echo "<td><a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'><button>Alterar</button></a></td>";
+            echo "<td><a href='deleta_agenda.php?id_agenda=".$row['id_agenda']."'><button>Excluir</button></a></td>";
             echo "</tr>";
             }while($row = mysqli_fetch_array($result))
         ?>
